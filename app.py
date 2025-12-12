@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # --- Configurations ---
-GOOGLE_CLIENT_ID = '334546713322-nqfkppmr7qfehs0gmd8r84uc4i2eu20s.apps.googleusercontent.com'
+GOOGLE_CLIENT_ID = '334546713322-nqfkppmr7qfehs0s.apps.googleusercontent.com'
 app.config['UPLOAD_FOLDER'] = 'uploads'
 os.makedirs("uploads", exist_ok=True)
 
@@ -167,3 +167,4 @@ def detect():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
